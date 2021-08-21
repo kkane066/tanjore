@@ -4,10 +4,10 @@ import {
 } from "react-router-dom";
 import Menu from '../components/menu/Menu.component';
 import Home from '../components/home/Home.component';
-import About from '../components/About/About.component';
 import Gallery from '../components/gallery/Gallery.component';
 import {Routes} from './Routes';
 import { AppBar, Tab, Tabs } from '@material-ui/core';
+import About from '../components/about/About.component';
 
 interface LinkTabProps {
   label: string,
@@ -56,7 +56,7 @@ function Router() {
           <Menu/>
         </Route>
         <Route path={Routes.About}>
-          <Menu/>
+          <About/>
         </Route>
         <Route path={Routes.gallery}>
           <Gallery/>

@@ -1,10 +1,10 @@
 import React from 'react';
-import styles from './About.module.css';
+//import styles from './About.module.css';
 
 function About() {
   return (
-    <div className={styles.homePage}>Home Page of Tanjore</div>
+    <div> About us </div>
   );
 }
 
-export default About
+export default About;
