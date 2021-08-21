@@ -1,9 +1,13 @@
 import React from 'react';
-//import styles from './About.module.css';
+import styles from './About.module.css';
 
 function About() {
   return (
-    <div> About us </div>
+    <div>
+      
+      <h1> About us </h1>
+    
+    </div>
   );
 }
 

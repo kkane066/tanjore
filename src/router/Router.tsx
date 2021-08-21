@@ -44,7 +44,7 @@ function Router() {
           onChange={handleChange}
         >
           <LinkTab label="Home" to={Routes.home} />
-          <LinkTab label="About" to={Routes.About}/>
+          <LinkTab label="About Us" to={Routes.About}/>
           <LinkTab label="Menu" to={Routes.menu} />
           <LinkTab label="Gallery" to={Routes.gallery} />
           
