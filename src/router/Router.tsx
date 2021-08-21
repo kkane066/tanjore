@@ -4,6 +4,7 @@ import {
 } from "react-router-dom";
 import Menu from '../components/menu/Menu.component';
 import Home from '../components/home/Home.component';
+import About from '../components/About/About.component';
 import Gallery from '../components/gallery/Gallery.component';
 import {Routes} from './Routes';
 import { AppBar, Tab, Tabs } from '@material-ui/core';
@@ -43,13 +44,18 @@ function Router() {
           onChange={handleChange}
         >
           <LinkTab label="Home" to={Routes.home} />
+          <LinkTab label="About" to={Routes.About}/>
           <LinkTab label="Menu" to={Routes.menu} />
           <LinkTab label="Gallery" to={Routes.gallery} />
+          
         </Tabs>
       </AppBar>
       
       <Switch>
         <Route path={Routes.menu}>
+          <Menu/>
+        </Route>
+        <Route path={Routes.About}>
           <Menu/>
         </Route>
         <Route path={Routes.gallery}>
